@@ -16,6 +16,9 @@ sql/*_local.sql
 # add Idea folders skip
 .idea
 
+# add skip for test-only purpose files:
+pullrequest_monitor/*_test.py
+
 #################################
 # standard gitignore file
 # Byte-compiled / optimized / DLL files
