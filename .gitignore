@@ -10,6 +10,9 @@ analysis/python/raw/*.csv
 # skip logs
 logs/*.log*
 
+# skip local sql files:
+sql/*_local.sql
+
 # add Idea folders skip
 .idea
 
