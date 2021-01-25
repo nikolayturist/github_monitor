@@ -1,0 +1,18 @@
+{
+  "batch_size" : 100,
+  "db_provider": "Oracle",
+  "drop_tables": "N",
+  "dml_echo": "N",
+  "log_level": "INFO",
+  "repositories": ["freeCodeCamp/freeCodeCamp"],
+
+  "augmented_load": "N",
+
+  "request_params": {
+    "per_page": 100,
+    "start_page": 1,
+    "request_status": "all",
+    "timeout": 0.5
+  }
+}
+
