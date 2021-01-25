@@ -70,13 +70,13 @@ def main():
     else:
         db_session = sqllite_connect()
 
-    if db_session is not None:
+    if db_session:
         ghw = github_walker.GitHubWalker(db_session, loader=GITHUB_LOADER_CONFIG, connections=CONNECTIONS_CONFIG)
         ghw.repository_walk()
         ghw.pull_requests_walk()
         ghw.ghl.dump_to_file("analysis/python/raw")
 
-    db_session.close()
+        db_session.close()
 
 
 if __name__ == "__main__":
